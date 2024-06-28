@@ -14,9 +14,10 @@ fetch('staff_list.json')
             const link = document.createElement('a');
             link.href = staff.url || '#';
             link.target = '_blank';
+            link.rel = 'noreferrer noopener'
 
             const avatar = document.createElement('img');
-            avatar.src = staff.avatar_url || '/public/favicon.ico';
+            avatar.src = staff.avatar_url || 'favicon.ico';
             avatar.alt = staff.name;
             avatar.className = 'uk-border-circle';
             avatar.style.width = '100px';
