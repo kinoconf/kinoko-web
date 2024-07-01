@@ -1,0 +1,52 @@
+{
+    "staff": {
+        "core": [
+            {
+                "id": "13da65ca-bb60-4a93-b1bd-9184cc37bafa",
+                "name": "ariaki",
+                "url": "https://twitter.com/ariaki4dev",
+                "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/13da65ca-bb60-4a93-b1bd-9184cc37bafa.jpg"
+            },
+            {
+                "id": "c60dcf7d-ae8d-4f1a-9f66-987433989ce4",
+                "name": "kii310",
+                "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/c60dcf7d-ae8d-4f1a-9f66-987433989ce4.jpg"
+            },
+            {
+                "id": "789aeb5f-f37e-4301-840b-d7e176dc7ef1",
+                "name": "Kizuku",
+                "url": "https://twitter.com/Kizuku_tech",
+                "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/789aeb5f-f37e-4301-840b-d7e176dc7ef1.jpg"
+            },
+            {
+                "id": "c86679ef-f4cc-477a-83c1-c45247dff1cb",
+                "name": "Magnolia.K",
+                "url": "https://twitter.com/magnolia_k_"
+            },
+            {
+                "id": "0655530f-d2ee-4433-bcb1-55b0e19c5139",
+                "name": "ponyoxa",
+                "url": "https://twitter.com/ponyoxa",
+                "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/0655530f-d2ee-4433-bcb1-55b0e19c5139.jpg"
+            },
+            {
+                "id": "95a1f619-c671-464f-8608-9583fb6c065e",
+                "name": "Sea10",
+                "url": "https://twitter.com/10derSea",
+                "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/95a1f619-c671-464f-8608-9583fb6c065e.jpg"
+            },
+            {
+                "id": "eb657e87-9c6a-4341-968b-c30d922c7b0c",
+                "name": "yoji",
+                "url": "https://twitter.com/YoujiO3",
+                "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/eb657e87-9c6a-4341-968b-c30d922c7b0c.jpg"
+            },
+            {
+                "id": "e38ac787-5a34-4d26-9ab1-8b97912fe9f3",
+                "name": "こうの",
+                "url": "https://twitter.com/hk_it7",
+                "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/e38ac787-5a34-4d26-9ab1-8b97912fe9f3.jpg"
+            }
+        ]
+    }
+}
