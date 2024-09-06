@@ -38,20 +38,42 @@ fetch('staff_list.json')
 
 const sponsorPlanSettings = {
     platinum_api: {
-        displayName: 'プラチナスポンサー'
+        displayName: 'プラチナスポンサー',
+        imageClass: 'big',
+        cardCssName: 'uk-width-1-1@s uk-width-1-1@m uk-width-1-3@l'
     },
     lunch_api: {
-        displayName: 'ランチスポンサー'
+        displayName: 'ランチスポンサー',
+        imageClass: 'medium',
+        cardCssName: 'uk-width-1-1@s uk-width-1-3@m'
     },
     gold_api: {
-        displayName: 'ゴールドスポンサー'
+        displayName: 'ゴールドスポンサー',
+        imageClass: 'medium',
+        cardCssName: 'uk-width-1-2@s uk-width-1-3@m'
     },
     silver_api: {
-        displayName: 'シルバースポンサー'
+        displayName: 'シルバースポンサー',
+        imageClass: 'small',
+        cardCssName: 'uk-width-1-2@s uk-width-1-3@m'
     },
     coffee_api: {
-        displayName: 'コーヒースポンサー'
+        displayName: 'コーヒースポンサー',
+        imageClass: 'small',
+        cardCssName: 'uk-width-1-2@s uk-width-1-3@m'
     }
+}
+
+const sponsor_images = {
+    ['グロースエクスパートナーズ株式会社']: '',
+    ['転職ドラフト']: './image/sponsors_logo/td_vi_RGB_col_color.png',
+    ['WAKE Career']:  './image/sponsors_logo/240829_wake_logo_bgrass.png',
+    ['テクノブレーン株式会社']: '',
+    ['株式会社CARTA HOLDINGS']: './image/sponsors_logo/logo_carta_black.png',
+    ['株式会社カケハシ']: './image/sponsors_logo/logo_kakehashi_vertical_rgb.png',
+    ['株式会社カオナビ']: './image/sponsors_logo/kaonavi_logo_RGB.png',
+    ['note株式会社']: '',
+    ['合同会社テンマド']: './image/sponsors_logo/10mado_logo.png',
 }
 
 /* 
@@ -63,11 +85,11 @@ fetch('sponsor_list.json')
         const obj = {}
         data.sponsor_plans.forEach(plan => {
             const sponsors = plan.sponsors
-                .filter(sponsor => !!sponsor.avatar)
+                .filter(sponsor => !!sponsor_images[sponsor.name])
                 .map(sponsor => {return {
                     name: sponsor.name,
                     url: sponsor.url,
-                    image: sponsor.avatar,
+                    image: sponsor_images[sponsor.name],
                 }});
             obj[plan.name] = sponsors;
         });
@@ -91,33 +113,38 @@ const sponsorCard = (sponsors, setting) => {
     sponsorPlanAria.appendChild(planNameHeader);
     
     const sponsorCardsWrapper = document.createElement('div');
-    sponsorCardsWrapper.className = "uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m uk-grid uk-flex-center";
-    sponsorCardsWrapper.attributes = ['uk-grid'];
+    sponsorCardsWrapper.className = `uk-flex uk-flex-center uk-text-center uk-grid-match`;
+    sponsorCardsWrapper.setAttribute('uk-grid', '')
 
     sponsorPlanAria.appendChild(sponsorCardsWrapper);
 
 
     sponsors.forEach(sponsor => {
+        const cardWrapper = document.createElement('div');
+        cardWrapper.className = `${setting.cardCssName} uk-grid-match uk-flex-center`;
         const sponsorCard = document.createElement('div');
-        sponsorCard.className = 'uk-card uk-card-default uk-card-body uk-text-center';
+        sponsorCard.className = 'uk-card uk-card-default uk-card-body';
         const link = document.createElement('a');
         link.href = sponsor.url || '#';
         link.target = '_blank';
         link.rel = 'noreferrer noopener'
+        link.className = 'uk-flex uk-flex-center';
         const avatar = document.createElement('img');
         avatar.src = sponsor.image;
         avatar.alt = sponsor.name;
-        avatar.style.width = '100px';
-        avatar.style.height = '100px';
+        avatar.className = `sponsors ${setting.imageClass} uk-text-center`;
         avatar.style.cursor = 'pointer';
         const name = document.createElement('h4');
+        name.className = 'uk-flex uk-flex-center uk-flex-bottom';
+        name.style.marginTop = '10px';
         name.textContent = sponsor.name;
 
         link.appendChild(avatar);
         sponsorCard.appendChild(link);
         sponsorCard.appendChild(name);
+        cardWrapper.appendChild(sponsorCard);
 
-        sponsorCardsWrapper.appendChild(sponsorCard);
+        sponsorCardsWrapper.appendChild(cardWrapper);
 
     });
     return sponsorPlanAria;
