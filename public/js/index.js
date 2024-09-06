@@ -122,14 +122,9 @@ const sponsorCard = (sponsors, setting) => {
         avatar.alt = sponsor.name;
         avatar.className = `sponsors ${setting.imageClass} uk-text-center`;
         avatar.style.cursor = 'pointer';
-        const name = document.createElement('h4');
-        name.className = 'uk-flex uk-flex-center uk-flex-bottom';
-        name.style.marginTop = '0px';
-        name.textContent = sponsor.name;
 
         link.appendChild(avatar);
         sponsorCard.appendChild(link);
-        sponsorCard.appendChild(name);
         cardWrapper.appendChild(sponsorCard);
 
         sponsorCardsWrapper.appendChild(cardWrapper);
