@@ -82,13 +82,21 @@ fetch('sponsor_list.json')
 
 const sponsorCard = (sponsors, setting) => {
     const sponsorPlanAria = document.createElement('div');
-    sponsorPlanAria.className = 'uk-text-center';
+    sponsorPlanAria.className = 'uk-text-center uk-margin-top';
     if(sponsors.length === 0){
         return sponsorPlanAria;
     }
     const planNameHeader = document.createElement('h3');
     planNameHeader.textContent = setting.displayName;
     sponsorPlanAria.appendChild(planNameHeader);
+    
+    const sponsorCardsWrapper = document.createElement('div');
+    sponsorCardsWrapper.className = "uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m uk-grid uk-flex-center";
+    sponsorCardsWrapper.attributes = ['uk-grid'];
+
+    sponsorPlanAria.appendChild(sponsorCardsWrapper);
+
+
     sponsors.forEach(sponsor => {
         const sponsorCard = document.createElement('div');
         sponsorCard.className = 'uk-card uk-card-default uk-card-body uk-text-center';
@@ -109,7 +117,7 @@ const sponsorCard = (sponsors, setting) => {
         sponsorCard.appendChild(link);
         sponsorCard.appendChild(name);
 
-        sponsorPlanAria.appendChild(sponsorCard);
+        sponsorCardsWrapper.appendChild(sponsorCard);
 
     });
     return sponsorPlanAria;
