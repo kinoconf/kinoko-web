@@ -64,18 +64,6 @@ const sponsorPlanSettings = {
     }
 }
 
-const sponsor_images = {
-    ['グロースエクスパートナーズ株式会社']: '',
-    ['転職ドラフト']: './image/sponsors_logo/td_vi_RGB_col_color.png',
-    ['WAKE Career']:  './image/sponsors_logo/240829_wake_logo_bgrass.png',
-    ['テクノブレーン株式会社']: '',
-    ['株式会社CARTA HOLDINGS']: './image/sponsors_logo/logo_carta_black.png',
-    ['株式会社カケハシ']: './image/sponsors_logo/logo_kakehashi_vertical_rgb.png',
-    ['株式会社カオナビ']: './image/sponsors_logo/kaonavi_logo_RGB.png',
-    ['note株式会社']: '',
-    ['合同会社テンマド']: './image/sponsors_logo/10mado_logo.png',
-}
-
 /* 
     スポンサーリスト作成
 */
@@ -85,11 +73,11 @@ fetch('sponsor_list.json')
         const obj = {}
         data.sponsor_plans.forEach(plan => {
             const sponsors = plan.sponsors
-                .filter(sponsor => !!sponsor_images[sponsor.name])
+                .filter(sponsor => !!sponsor.avatar)
                 .map(sponsor => {return {
                     name: sponsor.name,
                     url: sponsor.url,
-                    image: sponsor_images[sponsor.name],
+                    image: sponsor.avatar,
                 }});
             obj[plan.name] = sponsors;
         });
@@ -136,7 +124,7 @@ const sponsorCard = (sponsors, setting) => {
         avatar.style.cursor = 'pointer';
         const name = document.createElement('h4');
         name.className = 'uk-flex uk-flex-center uk-flex-bottom';
-        name.style.marginTop = '10px';
+        name.style.marginTop = '0px';
         name.textContent = sponsor.name;
 
         link.appendChild(avatar);
