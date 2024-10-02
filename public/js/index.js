@@ -37,6 +37,11 @@ fetch('staff_list.json')
     .catch(error => console.error('Error loading staff list:', error));
 
 const sponsorPlanSettings = {
+    venue: {
+        displayName: '会場スポンサー',
+        imageClass: 'big',
+        cardCssName: 'uk-width-1-1@s uk-width-1-1@m uk-width-1-3@l'
+    },
     platinum_api: {
         displayName: 'プラチナスポンサー',
         imageClass: 'big',
