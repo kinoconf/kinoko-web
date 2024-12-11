@@ -8,6 +8,12 @@
         "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/13da65ca-bb60-4a93-b1bd-9184cc37bafa.jpg"
       },
       {
+        "id": "d912802c-bd8a-4a84-b007-8c563a3e5e67",
+        "name": "hehehenohe",
+        "url": "https://twitter.com/shinpei_takano",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/d912802c-bd8a-4a84-b007-8c563a3e5e67.jpg"
+      },
+      {
         "id": "165f9f5a-b49f-4a2f-9c45-3ea48a21d417",
         "name": "honchang",
         "url": "https://twitter.com/honchang_",
@@ -34,7 +40,8 @@
       {
         "id": "c86679ef-f4cc-477a-83c1-c45247dff1cb",
         "name": "Magnolia.K",
-        "url": "https://twitter.com/magnolia_k_"
+        "url": "https://twitter.com/magnolia_k_",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/c86679ef-f4cc-477a-83c1-c45247dff1cb.jpg"
       },
       {
         "id": "0655530f-d2ee-4433-bcb1-55b0e19c5139",
@@ -59,6 +66,12 @@
         "name": "こうの",
         "url": "https://twitter.com/hk_it7",
         "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/e38ac787-5a34-4d26-9ab1-8b97912fe9f3.jpg"
+      },
+      {
+        "id": "214bec4a-1021-4f99-9758-54044fc5764e",
+        "name": "とれびー",
+        "url": "https://twitter.com/treby006",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/214bec4a-1021-4f99-9758-54044fc5764e.jpg"
       }
     ]
   }
