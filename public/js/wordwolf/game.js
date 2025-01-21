@@ -18,14 +18,14 @@ function inputName(){
   const playerNameInputs = document.querySelector('#player_name_input');
   for (let i = 0; i < playerCountNum; i++) {
     const li = document.createElement('li');
-    li.textContent = `プレイヤー${i + 1})：`;
+    li.textContent = `プレイヤー${i + 1}：`;
     const playerNameInput = document.createElement('input');
     li.appendChild(playerNameInput);
     playerNameInput.type = 'text';
     playerNameInput.name = `player_name_${i}`;
     playerNameInput.id = `player_name_${i}`;
-    playerNameInput.placeholder = `プレイヤー${i + 1})`;
-    playerNameInputs.appendChild(playerNameInput);
+    playerNameInput.placeholder = `プレイヤー${i + 1}`;
+    playerNameInputs.appendChild(li);
   }
   document.querySelector('#section-3').style = 'display: block;';
 }
