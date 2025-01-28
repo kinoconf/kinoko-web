@@ -2,19 +2,14 @@
     font-family: "Montserrat","BIZ UDPGothic",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" !important;
 }
 div.topbar {
-    background: linear-gradient(to left,#28a5f5,#1e87f0)!important;
+    background-color: transparent !important;
+    /*
+    background-color: #395a44 !important;
+    */
+    /* background: linear-gradient(to left,#28a5f5,#1e87f0)!important;*/
 }
-header.hero-header {
-    margin-top: -80px;
-    background-image: url("../image/kinoko-hero.jpg");
-    background-size: cover;
-    &:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: rgba(66,66,66,0.5);
-    }
+img.hero {
+    width: 100%;
 }
 .uk-section:nth-child(even) {
     background-color: #f7f7f7;
