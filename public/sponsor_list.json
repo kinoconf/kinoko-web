@@ -131,7 +131,7 @@
       "name_en": "venue"
     },
     {
-      "name": "custom_api",
+      "name": "beer_api",
       "sponsors": [
         {
           "id": "8480e199-21f8-4104-86f9-7b04c7bbdc98",
@@ -143,7 +143,7 @@
           "avatar": "https://fortee.jp/files/kinoko-2025/sponsor/8480e199-21f8-4104-86f9-7b04c7bbdc98.png"
         }
       ],
-      "name_en": "custom_api"
+      "name_en": "beer_api"
     }
   ]
 }

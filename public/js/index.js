@@ -52,6 +52,16 @@ const sponsorPlanSettings = {
         imageClass: 'medium',
         cardCssName: 'uk-width-1-1@s uk-width-1-3@m'
     },
+    coffee_api: {
+        displayName: 'コーヒースポンサー',
+        imageClass: 'medium',
+        cardCssName: 'uk-width-1-2@s uk-width-1-3@m'
+    },
+    beer_api: {
+        displayName: 'ビールスポンサー',
+        imageClass: 'medium',
+        cardCssName: 'uk-width-1-2@s uk-width-1-3@m'
+    },
     gold_api: {
         displayName: 'ゴールドスポンサー',
         imageClass: 'medium',
@@ -59,11 +69,6 @@ const sponsorPlanSettings = {
     },
     silver_api: {
         displayName: 'シルバースポンサー',
-        imageClass: 'small',
-        cardCssName: 'uk-width-1-2@s uk-width-1-3@m'
-    },
-    coffee_api: {
-        displayName: 'コーヒースポンサー',
         imageClass: 'small',
         cardCssName: 'uk-width-1-2@s uk-width-1-3@m'
     }
