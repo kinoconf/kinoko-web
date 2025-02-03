@@ -5,7 +5,7 @@ fetch('staff_list.json')
     .then(response => response.json())
     .then(data => {
         const staffData = data;
-        const staffListElement = document.getElementById('staff-list');
+        const coreStaffListElement = document.getElementById('core-staff-list');
 
         staffData.staff.core.forEach(staff => {
             const staffCard = document.createElement('div');
@@ -31,7 +31,7 @@ fetch('staff_list.json')
             staffCard.appendChild(link);
             staffCard.appendChild(name);
 
-            staffListElement.appendChild(staffCard);
+            coreStaffListElement.appendChild(staffCard);
         });
 
         const oneDayStaffListElement = document.getElementById('one-day-staff-list');
