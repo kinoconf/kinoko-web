@@ -1,4 +1,4 @@
-/* 
+/*
     スタッフリスト作成
 */
 fetch('staff_list.json')
@@ -32,6 +32,35 @@ fetch('staff_list.json')
             staffCard.appendChild(name);
 
             staffListElement.appendChild(staffCard);
+        });
+
+        const oneDayStaffListElement = document.getElementById('one-day-staff-list');
+
+        staffData.staff.oneDay.forEach(staff => {
+            const staffCard = document.createElement('div');
+            staffCard.className = 'uk-card uk-card-default uk-card-body uk-text-center';
+
+            const link = document.createElement('a');
+            link.href = staff.url || '#';
+            link.target = '_blank';
+            link.rel = 'noreferrer noopener'
+
+            const avatar = document.createElement('img');
+            avatar.src = staff.avatar_url || 'favicon.ico';
+            avatar.alt = staff.name;
+            avatar.className = 'uk-border-circle';
+            avatar.style.width = '100px';
+            avatar.style.height = '100px';
+            avatar.style.cursor = 'pointer';
+
+            const name = document.createElement('h4');
+            name.textContent = staff.name;
+
+            link.appendChild(avatar);
+            staffCard.appendChild(link);
+            staffCard.appendChild(name);
+
+            oneDayStaffListElement.appendChild(staffCard);
         });
     })
     .catch(error => console.error('Error loading staff list:', error));
@@ -74,7 +103,7 @@ const sponsorPlanSettings = {
     }
 }
 
-/* 
+/*
     スポンサーリスト作成
 */
 fetch('sponsor_list.json')
@@ -96,7 +125,7 @@ fetch('sponsor_list.json')
             const sponsorPlanAria = sponsorCard(obj[key], sponsorPlanSettings[key]);
             sponsorListElement.appendChild(sponsorPlanAria);
         });
-        
+
     })
     .catch(error => console.error('Error loading sponsor list:', error));
 
@@ -109,7 +138,7 @@ const sponsorCard = (sponsors, setting) => {
     const planNameHeader = document.createElement('h3');
     planNameHeader.textContent = setting.displayName;
     sponsorPlanAria.appendChild(planNameHeader);
-    
+
     const sponsorCardsWrapper = document.createElement('div');
     sponsorCardsWrapper.className = `uk-flex uk-flex-center uk-text-center uk-grid-match`;
     sponsorCardsWrapper.setAttribute('uk-grid', '')
