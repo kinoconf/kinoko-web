@@ -162,6 +162,12 @@
         "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/12bfd19b-ed51-41e2-87a9-9fbc4d29e711.jpg"
       },
       {
+        "id": "65511c41-fb5e-4c49-a757-5ae81b06624c",
+        "name": "うすゆき",
+        "url": "https://twitter.com/usuyuki26",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/65511c41-fb5e-4c49-a757-5ae81b06624c.jpg"
+      },
+      {
         "id": "ab7fedd1-f9a2-4938-976f-bd0a2488f6c6",
         "name": "おさない",
         "url": "https://twitter.com/000sak000",
@@ -188,7 +194,8 @@
       {
         "id": "e6888b52-3474-4fbc-8f0c-0adc7e16a873",
         "name": "すだめ",
-        "url": "https://github.com/sudame"
+        "url": "https://github.com/sudame",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/e6888b52-3474-4fbc-8f0c-0adc7e16a873.png"
       },
       {
         "id": "c3b8f680-4a2f-4dc3-8ed9-4d7bb9f65d1c",
@@ -217,6 +224,12 @@
         "name": "八犬伝",
         "url": "https://twitter.com/gravitino",
         "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/467ffee7-aef4-41cf-bcdb-7d6dd366413d.png"
+      },
+      {
+        "id": "91d62142-5ef1-4ba4-9279-641733348a27",
+        "name": "大沼佑樹",
+        "url": "https://twitter.com/nicozetsche",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/91d62142-5ef1-4ba4-9279-641733348a27.jpg"
       },
       {
         "id": "768b2f29-a13a-49d9-8104-4455325c5c95",
