@@ -73,6 +73,176 @@
         "url": "https://twitter.com/treby006",
         "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/214bec4a-1021-4f99-9758-54044fc5764e.jpg"
       }
+    ],
+    "oneDay": [
+      {
+        "id": "d41d417b-4194-4bd5-a478-4f44a0ff5198",
+        "name": "bash",
+        "url": "https://twitter.com/bash0C7",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/d41d417b-4194-4bd5-a478-4f44a0ff5198.png"
+      },
+      {
+        "id": "11f44d92-bae7-4547-816a-2a26f2687011",
+        "name": "fkuMnk",
+        "url": "https://twitter.com/fku_mnk",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/11f44d92-bae7-4547-816a-2a26f2687011.jpg"
+      },
+      {
+        "id": "93497f4f-2e5f-48ce-b122-edcaa042f25b",
+        "name": "Kaitou",
+        "url": "https://twitter.com/Kaitou1192",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/93497f4f-2e5f-48ce-b122-edcaa042f25b.jpg"
+      },
+      {
+        "id": "44db425f-6f53-4ab0-bbb7-fffe9ca103fb",
+        "name": "kazu_kichi_67",
+        "url": "https://twitter.com/kazu_kichi_67",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/44db425f-6f53-4ab0-bbb7-fffe9ca103fb.jpg"
+      },
+      {
+        "id": "09a33596-50cd-4397-b8b2-c913c00ee020",
+        "name": "KOHE",
+        "url": "https://twitter.com/kohe_osaka",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/09a33596-50cd-4397-b8b2-c913c00ee020.jpg"
+      },
+      {
+        "id": "e652a9a8-30ad-4011-8ed6-f7463c91b866",
+        "name": "KojiKa",
+        "url": "https://twitter.com/_ko2ka_",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/e652a9a8-30ad-4011-8ed6-f7463c91b866.jpg"
+      },
+      {
+        "id": "14b87698-fa66-4c5f-8b85-b5376a3b50a5",
+        "name": "Masahiro Aikawa",
+        "url": "https://twitter.com/riv_infra",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/14b87698-fa66-4c5f-8b85-b5376a3b50a5.jpg"
+      },
+      {
+        "id": "a26ab957-9ebb-4063-9117-2b9fadd5aee9",
+        "name": "Natsuki",
+        "url": "https://twitter.com/natch_engr",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/a26ab957-9ebb-4063-9117-2b9fadd5aee9.png"
+      },
+      {
+        "id": "cc76fd16-f1c9-4c42-af8a-7d687081a594",
+        "name": "nota"
+      },
+      {
+        "id": "06b6e4de-46db-47ca-9e35-fe16d110110a",
+        "name": "shinnosuke",
+        "url": "https://twitter.com/mwudo",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/06b6e4de-46db-47ca-9e35-fe16d110110a.png"
+      },
+      {
+        "id": "6a1254a4-bdb3-4c06-89e4-a05000c4cfbf",
+        "name": "Sho Yamada",
+        "url": "https://github.com/rukiadia"
+      },
+      {
+        "id": "835d83f4-c708-4ac6-ab22-11256ef3c6e5",
+        "name": "ShotaArima",
+        "url": "https://twitter.com/live_in_2107",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/835d83f4-c708-4ac6-ab22-11256ef3c6e5.jpg"
+      },
+      {
+        "id": "9430f9b8-7f3e-4782-85cf-537d0ef226e3",
+        "name": "tpdn",
+        "url": "https://twitter.com/KIM_TPDN",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/9430f9b8-7f3e-4782-85cf-537d0ef226e3.jpg"
+      },
+      {
+        "id": "ae26d452-1ad1-4062-b491-cf68e5bef019",
+        "name": "あずま",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/ae26d452-1ad1-4062-b491-cf68e5bef019.jpg"
+      },
+      {
+        "id": "94b8597d-5517-4324-a803-1ee3a58d42a3",
+        "name": "アマレロ",
+        "url": "https://twitter.com/amarelo_n24",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/94b8597d-5517-4324-a803-1ee3a58d42a3.jpg"
+      },
+      {
+        "id": "12bfd19b-ed51-41e2-87a9-9fbc4d29e711",
+        "name": "いいずか",
+        "url": "https://twitter.com/hiizkk",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/12bfd19b-ed51-41e2-87a9-9fbc4d29e711.jpg"
+      },
+      {
+        "id": "65511c41-fb5e-4c49-a757-5ae81b06624c",
+        "name": "うすゆき",
+        "url": "https://twitter.com/usuyuki26",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/65511c41-fb5e-4c49-a757-5ae81b06624c.jpg"
+      },
+      {
+        "id": "ab7fedd1-f9a2-4938-976f-bd0a2488f6c6",
+        "name": "おさない",
+        "url": "https://twitter.com/000sak000",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/ab7fedd1-f9a2-4938-976f-bd0a2488f6c6.jpg"
+      },
+      {
+        "id": "36f5e602-d5ad-4c4d-b5b0-ebc7dae86d11",
+        "name": "かおる",
+        "url": "https://twitter.com/bariero",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/36f5e602-d5ad-4c4d-b5b0-ebc7dae86d11.jpg"
+      },
+      {
+        "id": "c15810d4-f3f6-45ce-8c5d-66f120994d90",
+        "name": "かげろん",
+        "url": "https://twitter.com/shade4827",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/c15810d4-f3f6-45ce-8c5d-66f120994d90.jpg"
+      },
+      {
+        "id": "06b09ffa-dcca-4a94-a85e-40ef88c77bd7",
+        "name": "げんき",
+        "url": "https://github.com/GenkiSugiyama",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/06b09ffa-dcca-4a94-a85e-40ef88c77bd7.jpg"
+      },
+      {
+        "id": "e6888b52-3474-4fbc-8f0c-0adc7e16a873",
+        "name": "すだめ",
+        "url": "https://github.com/sudame",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/e6888b52-3474-4fbc-8f0c-0adc7e16a873.png"
+      },
+      {
+        "id": "c3b8f680-4a2f-4dc3-8ed9-4d7bb9f65d1c",
+        "name": "たっしー",
+        "url": "https://twitter.com/tashipiyo",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/c3b8f680-4a2f-4dc3-8ed9-4d7bb9f65d1c.jpg"
+      },
+      {
+        "id": "6bcc37ec-98f9-4c4b-95c2-ef5d02ed1d2c",
+        "name": "てぃば（CHIBA Reimi）｜rechiba3",
+        "url": "https://twitter.com/rechiba3",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/6bcc37ec-98f9-4c4b-95c2-ef5d02ed1d2c.png"
+      },
+      {
+        "id": "db823dfc-2e0d-40ea-a107-b6beb08406ea",
+        "name": "にしはら"
+      },
+      {
+        "id": "7ce2cae9-fdf0-492d-b706-d12ce071152e",
+        "name": "ミカイ",
+        "url": "https://twitter.com/miumitempe",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/7ce2cae9-fdf0-492d-b706-d12ce071152e.jpg"
+      },
+      {
+        "id": "467ffee7-aef4-41cf-bcdb-7d6dd366413d",
+        "name": "八犬伝",
+        "url": "https://twitter.com/gravitino",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/467ffee7-aef4-41cf-bcdb-7d6dd366413d.png"
+      },
+      {
+        "id": "91d62142-5ef1-4ba4-9279-641733348a27",
+        "name": "大沼佑樹",
+        "url": "https://twitter.com/nicozetsche",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/91d62142-5ef1-4ba4-9279-641733348a27.jpg"
+      },
+      {
+        "id": "768b2f29-a13a-49d9-8104-4455325c5c95",
+        "name": "白栁隆司",
+        "url": "https://twitter.com/ShirayanagiRyuj",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/768b2f29-a13a-49d9-8104-4455325c5c95.jpg"
+      }
     ]
   }
 }
