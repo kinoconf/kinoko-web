@@ -36,7 +36,7 @@ fetch('staff_list.json')
 
         const oneDayStaffListElement = document.getElementById('one-day-staff-list');
 
-        staffData.staff.oneDay.forEach(staff => {
+        staffData.staff['1day'].forEach(staff => {
             const staffCard = document.createElement('div');
             staffCard.className = 'uk-card uk-card-default uk-card-body uk-text-center';
 
