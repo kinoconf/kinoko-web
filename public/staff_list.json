@@ -72,9 +72,15 @@
         "name": "とれびー",
         "url": "https://twitter.com/treby006",
         "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/214bec4a-1021-4f99-9758-54044fc5764e.jpg"
+      },
+      {
+        "id": "d9c99679-969e-4825-af8b-a87bb64b3228",
+        "name": "ふれーむ",
+        "url": "https://twitter.com/ditflame",
+        "avatar_url": "https://fortee.jp/files/kinoko-2025/avatar/d9c99679-969e-4825-af8b-a87bb64b3228.jpg"
       }
     ],
-    "oneDay": [
+    "1day": [
       {
         "id": "d41d417b-4194-4bd5-a478-4f44a0ff5198",
         "name": "bash",
