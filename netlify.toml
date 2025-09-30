@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/"
-  to = "/2025"
+  to = "/public/index.html"
   status = 301
   force = true

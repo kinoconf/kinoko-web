@@ -1,0 +1,108 @@
+{
+  "sponsor_plans": [
+    {
+      "name": "platinum_api",
+      "sponsors": [
+        {
+          "id": "",
+          "name": "",
+          "kana": "",
+          "url": "",
+          "pr": "",
+          "twitter": "",
+          "avatar": ""
+        }
+      ],
+      "name_en": "platinum_api"
+    },
+    {
+      "name": "lunch_api",
+      "sponsors": [
+        {
+          "id": "",
+          "name": "",
+          "kana": "",
+          "url": "",
+          "pr": "",
+          "avatar": ""
+        }
+      ],
+      "name_en": "lunch_api"
+    },
+    {
+      "name": "coffee_api",
+      "sponsors": [
+        {
+          "id": "",
+          "name": "",
+          "kana": "",
+          "url": "",
+          "pr": "",
+          "twitter": "",
+          "avatar": ""
+        }
+      ],
+      "name_en": "coffee_api"
+    },
+    {
+      "name": "gold_api",
+      "sponsors": [
+        {
+          "id": "",
+          "name": "",
+          "kana": "",
+          "url": "",
+          "pr": "",
+          "twitter": "",
+          "avatar": ""
+        }
+      ],
+      "name_en": "gold_api"
+    },
+    {
+      "name": "silver_api",
+      "sponsors": [
+        {
+          "id": "",
+          "name": "",
+          "kana": "",
+          "url": "",
+          "pr": "",
+          "twitter": "",
+          "avatar": ""
+        }
+      ],
+      "name_en": "silver_api"
+    },
+    {
+      "name": "venue",
+      "sponsors": [
+        {
+          "id": "",
+          "name": "",
+          "kana": "",
+          "url": "",
+          "pr": "",
+          "twitter": "",
+          "avatar": ""
+        }
+      ],
+      "name_en": "venue"
+    },
+    {
+      "name": "beer_api",
+      "sponsors": [
+        {
+          "id": "",
+          "name": "",
+          "kana": "",
+          "url": "",
+          "pr": "",
+          "twitter": "",
+          "avatar": ""
+        }
+      ],
+      "name_en": "beer_api"
+    }
+  ]
+}
