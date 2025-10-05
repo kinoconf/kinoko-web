@@ -1,0 +1,412 @@
+/* ========================================
+   基本設定・リセット
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ページ全体の背景とベーススタイル */
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* ========================================
+   ヒーローセクション（メインビジュアル）
+   ======================================== */
+/* カラフルなアニメーション背景のヒーローエリア */
+.hero-section {
+    background: linear-gradient(135deg, #ff6b6b, #ffd93d, #6bcf7f, #4dabf7, #9775fa);
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease infinite;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* グラデーション背景の動きアニメーション */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ヒーローセクションのオーバーレイ効果 */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* ヒーローコンテンツを前面に表示 */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* 「第2回開催決定！」バッジ */
+.edition-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 8px 24px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: bounce 2s infinite;
+}
+
+/* バッジのバウンス（跳ねる）アニメーション */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+/* メインタイトル */
+h1 {
+    color: white;
+    font-size: clamp(2rem, 5vw, 4rem); /* レスポンシブ対応のフォントサイズ */
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* フェードインアップアニメーション */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* サブタイトル */
+.subtitle {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-out 0.3s both; /* 0.3秒遅延でアニメーション */
+}
+
+/* ========================================
+   メインコンテンツエリア
+   ======================================== */
+/* 白いカード型のメインコンテンツ */
+.main-content {
+    background: white;
+    margin: -30px 20px 0; /* ヒーローセクションに重ねる */
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+/* ティザーサイト告知バナー */
+.announce {
+    background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.announce a {
+    color: white;
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+/* マルキー（流れるテキスト）エリア */
+.marquee_area {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+/* コンテンツ全体のコンテナ */
+.contents {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ========================================
+   セクション（カード）スタイル
+   ======================================== */
+/* 各セクションのカード型スタイル */
+section {
+    margin-bottom: 50px;
+    padding: 30px;
+    background: linear-gradient(135deg, #f8f9ff, #fff);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* セクションホバー時の浮上効果 */
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* セクション見出し */
+h3 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* 見出し下のアクセントライン */
+h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(45deg, #ff6b6b, #4dabf7);
+    margin: 10px auto;
+    border-radius: 2px;
+}
+/* ========================================
+   お知らせテーブル
+   ======================================== */
+/* お知らせのテーブル */
+.news table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+/* テーブルセル */
+.news td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+/* テーブル左列（項目名） */
+.news td:first-child {
+    font-weight: bold;
+    color: #667eea;
+    width: 30%;
+    text-align: right;
+}
+
+/* ========================================
+   日程表示エリア
+   ======================================== */
+/* 日程カードの親コンテナ */
+.date-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+/* 個別の日程カード */
+.date-card {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+    transition: transform 0.3s ease;
+}
+
+/* 日程カードのホバー時拡大効果 */
+.date-card:hover {
+    transform: scale(1.05);
+}
+
+/* 日程カード内のイベント名（前夜祭・本編） */
+.date-card span:first-child {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* 日程カード内の日付 */
+.date-card span:last-child {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+/* ========================================
+   イベント詳細テーブル
+   ======================================== */
+/* イベント詳細のテーブル */
+.event_details table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+/* テーブルセル */
+.event_details td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+/* テーブル左列（項目名） */
+.event_details td:first-child {
+    font-weight: bold;
+    color: #667eea;
+    width: 30%;
+}
+
+/* ========================================
+   リンクスタイル
+   ======================================== */
+/* 基本的なリンクスタイル */
+a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* リンクホバー時の色変更 */
+a:hover {
+    color: #ff6b6b;
+    text-decoration: underline;
+}
+
+/* 訪問済みリンク */
+a:visited {
+    color: #667eea;
+}
+
+/* ========================================
+   コンテンツリスト（ボタン風）
+   ======================================== */
+/* コンテンツリストの親コンテナ */
+.contents_list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* コンテンツリストの各アイテム（ボタン風） */
+.contents_list li {
+    list-style: none;
+    background: linear-gradient(135deg, #ff6b6b, #ffd93d);
+    border-radius: 25px;
+    padding: 15px 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* コンテンツリストアイテムのホバー効果 */
+.contents_list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
+}
+
+/* コンテンツリスト内のリンク */
+.contents_list a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ========================================
+   フッター
+   ======================================== */
+/* フッター全体 */
+footer {
+    background: #333;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+/* コピーライト表示エリア */
+footer .copy_right {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* フッターナビゲーションリスト */
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* フッターリストアイテム */
+footer li {
+    list-style: none;
+}
+
+/* フッター内のリンク */
+footer a {
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+/* フッターリンクのホバー効果 */
+footer a:hover {
+    color: #fff;
+}
+
+/* ========================================
+   その他要素
+   ======================================== */
+/* マルキー（流れるテキスト）のスタイル */
+marquee {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* ========================================
+   レスポンシブデザイン（モバイル対応）
+   ======================================== */
+@media (max-width: 768px) {
+    /* モバイルでは日程カードを縦並びに */
+    .date-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    /* モバイルではコンテンツリストを縦並びに */
+    .contents_list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* モバイルではフッターナビを縦並びに */
+    footer ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
