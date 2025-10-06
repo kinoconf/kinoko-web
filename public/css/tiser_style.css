@@ -1,0 +1,705 @@
+/* ========================================
+   基本設定・リセット
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* スムーズスクロール */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* ヘッダーの高さ分のオフセット */
+}
+
+/* ページ全体の背景とベーススタイル */
+body {
+    background: #8b4513; /* 茶色 */
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/* ========================================
+   透過式常駐ヘッダー
+   ======================================== */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(47, 79, 47, 0.5); /* 透過式ダークオリーブグリーン */
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    padding: 15px 0;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ヘッダーコンテンツ */
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* ロゴ */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #f5f5dc; /* ベージュ */
+}
+
+.logo-icon {
+    font-size: 1.5rem;
+    animation: bounce 2s infinite;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* ヘッダーナビゲーション */
+.header-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+.header-nav li {
+    position: relative;
+}
+
+.header-nav a {
+    color: #f5f5dc; /* ベージュ */
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-nav a:hover {
+    background: rgba(245, 245, 220, 0.2); /* 薄いベージュ */
+    color: #daa520; /* ゴールデンロッド */
+    transform: translateY(-2px);
+}
+
+.header-nav a:visited {
+    background: rgba(245, 245, 220, 0.2); /* 薄いベージュ */
+    color: #f5f5dc; /* ベージュ */
+    transform: translateY(-2px);
+}
+
+.header-nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #daa520; /* ゴールデンロッド */
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.header-nav a:hover::before {
+    width: 80%;
+}
+
+/* ========================================
+   マルキーテキストアニメーション
+   ======================================== */
+.marquee_text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    white-space: nowrap;
+    animation: marqueePC 5s linear infinite alternate;
+    display: inline-block;
+    width: max-content; /* テキストの実際の幅に合わせる */
+}
+
+/* PC用のマルキーアニメーション（左右の端から端まで移動） */
+@keyframes marqueePC {
+    0% { 
+        transform: translateX(0); 
+    }
+    100% { 
+        transform: translateX(calc(100vw - 100% - 40px)); /* 画面幅からテキスト幅とマージンを引いた位置まで移動 */
+    }
+}
+
+/* チェックボックス（非表示） */
+.menu-toggle {
+    display: none;
+}
+
+/* ハンバーガーアイコン */
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    background: rgba(47, 79, 47, 0.9); /* ダークオリーブグリーン */
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.hamburger-icon:hover {
+    background: rgba(47, 79, 47, 1);
+    transform: scale(1.05);
+}
+
+/* ハンバーガーの線（バー） */
+.bar {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: #f5f5dc; /* ベージュ */
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* メニューが開いた時のアニメーション */
+.menu-toggle:checked ~ .hamburger-icon .bar:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-toggle:checked ~ .hamburger-icon .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle:checked ~ .hamburger-icon .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* ナビゲーションメニュー */
+.nav-menu {
+    position: fixed;
+    top: 0;
+    right: -300px; /* 初期状態では画面外 */
+    width: 280px;
+    height: 100vh;
+    background: linear-gradient(135deg, #2f4f2f, #228b22); /* ダークオリーブグリーンから森緑 */
+    padding: 80px 20px 20px;
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.3);
+}
+
+/* メニューが開いた時 */
+.menu-toggle:checked ~ .nav-menu {
+    right: 0;
+}
+
+/* メニューリスト */
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin-bottom: 20px;
+}
+
+.nav-menu a {
+    display: block;
+    color: #f5f5dc; /* ベージュ */
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.nav-menu a:hover {
+    background: rgba(245, 245, 220, 0.1); /* 薄いベージュ */
+    border-left: 4px solid #daa520; /* ゴールデンロッド */
+    transform: translateX(5px);
+}
+/* ========================================
+   マルキーテキストアニメーション
+   ======================================== */
+.marquee_text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    white-space: nowrap;
+    animation: marqueePC 5s linear infinite alternate;
+    display: inline-block;
+    width: max-content; /* テキストの実際の幅に合わせる */
+}
+
+/* PC用のマルキーアニメーション（左右の端から端まで移動） */
+@keyframes marqueePC {
+    0% { 
+        transform: translateX(0); 
+    }
+    100% { 
+        transform: translateX(calc(100vw - 100% - 100px)); /* 画面幅からテキスト幅とマージンを引いた位置まで移動 */
+    }
+}
+
+/* ========================================
+   ヒーローセクション（メインビジュアル）
+   ======================================== */
+/* カラフルなアニメーション背景のヒーローエリア */
+.hero-section {
+    background: linear-gradient(135deg, #228b22, #8fbc8f, #daa520, #a0522d, #6b8e23); /* 森緑、薄緑、ゴールデンロッド、茶色、オリーブグリーン */
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease infinite;
+    padding: 18% 60px; /* 上部にヘッダー分のスペースを追加 */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+/* グラデーション背景の動きアニメーション */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ヒーローセクションのオーバーレイ効果 */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* ヒーローコンテンツを前面に表示 */
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* 「第2回開催決定！」バッジ */
+.edition-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 8px 24px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: bounce 2s infinite;
+}
+
+/* バッジのバウンス（跳ねる）アニメーション */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+/* メインタイトル */
+h1 {
+    color: white;
+    font-size: clamp(2rem, 5vw, 4rem); /* レスポンシブ対応のフォントサイズ */
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* フェードインアップアニメーション */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* サブタイトル */
+.subtitle {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-out 0.3s both; /* 0.3秒遅延でアニメーション */
+}
+
+/* ========================================
+   メインコンテンツエリア
+   ======================================== */
+/* 白いカード型のメインコンテンツ */
+.main-content {
+    background: white;
+    margin: -30px 20px 0; /* ヒーローセクションに重ねる */
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+/* ティザーサイト告知バナー */
+.announce {
+    background: #8b4513; /* 茶色 */
+    color: white; /* 白 */
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.announce a {
+    color: white;
+    text-decoration: underline;
+    font-size: 1.3rem;
+}
+
+/* マルキー（流れるテキスト）エリア */
+.marquee_area {
+    background: #2f4f2f; /* ダークオリーブグリーン */
+    color: #f5f5dc; /* ベージュ */
+    padding: 10px 20px; /* 左右にパディングを追加 */
+    overflow: hidden; /* はみ出したテキストを隠す */
+    position: relative;
+}
+
+/* コンテンツ全体のコンテナ */
+.contents {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ========================================
+   セクション（カード）スタイル
+   ======================================== */
+/* 各セクションのカード型スタイル */
+section {
+    margin-bottom: 50px;
+    padding: 30px;
+    background: #f5f5dc; /* ベージュ */
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(139, 69, 19, 0.15); /* 茶色系の影 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    scroll-margin-top: 80px; /* ヘッダーの高さ分のスクロールオフセット */
+}
+
+/* セクションホバー時の浮上効果 */
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(139, 69, 19, 0.25); /* 茶色系の影を濃く */
+}
+
+/* セクション見出し */
+h3 {
+    color: #2f4f2f; /* ダークオリーブグリーン */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+/* 見出し下のアクセントライン */
+h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(45deg, #228b22, #daa520); /* 森緑からゴールデンロッドへ */
+    margin: 10px auto;
+    border-radius: 2px;
+}
+/* ========================================
+   お知らせテーブル
+   ======================================== */
+/* お知らせのテーブル */
+.news table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+/* テーブルセル */
+.news td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+/* テーブル左列（項目名） */
+.news td:first-child {
+    font-weight: bold;
+    color: #228b22; /* 森緑 */
+    width: 30%;
+    text-align: right;
+}
+
+/* ========================================
+   日程表示エリア
+   ======================================== */
+/* 日程カードの親コンテナ */
+.date-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+/* 個別の日程カード */
+.date-card {
+    background: linear-gradient(135deg, #228b22, #daa520); /* 森緑からゴールデンロッドへ */
+    color: #f5f5dc; /* ベージュ文字 */
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(34, 139, 34, 0.4); /* 森緑系の影 */
+    transition: transform 0.3s ease;
+}
+
+/* 日程カードのホバー時拡大効果 */
+.date-card:hover {
+    transform: scale(1.05);
+}
+
+/* 日程カード内のイベント名（前夜祭・本編） */
+.date-card span:first-child {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* 日程カード内の日付 */
+.date-card span:last-child {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+/* ========================================
+   きのこカンファレンスとはテキスト
+   ======================================== */
+.about-text {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ========================================
+   イベント詳細テーブル
+   ======================================== */
+/* イベント詳細のテーブル */
+.event_details table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+/* テーブルセル */
+.event_details td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+/* テーブル左列（項目名） */
+.event_details td:first-child {
+    font-weight: bold;
+    color: #228b22; /* 森緑 */
+    width: 30%;
+}
+/* アイコン高さ位置調整 */
+svg {
+    vertical-align: middle;
+}
+/* ========================================
+   リンクスタイル
+   ======================================== */
+/* 基本的なリンクスタイル */
+a {
+    color: #228b22; /* 森緑 */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* リンクホバー時の色変更 */
+a:hover {
+    color: #8b4513; /* 茶色 */
+    text-decoration: underline;
+}
+
+/* 訪問済みリンク */
+a:visited {
+    color: #6b8e23; /* オリーブグリーン */
+}
+
+/* ========================================
+   コンテンツリスト（ボタン風）
+   ======================================== */
+/* コンテンツリストの親コンテナ */
+.contents_list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* コンテンツリストの各アイテム（ボタン風） */
+.contents_list li {
+    list-style: none;
+    background: linear-gradient(135deg, #228b22, #a0522d); /* 森緑から茶色へ */
+    border-radius: 25px;
+    padding: 15px 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* コンテンツリストアイテムのホバー効果 */
+.contents_list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(34, 139, 34, 0.4); /* 森緑系の影 */
+}
+
+/* コンテンツリスト内のリンク */
+.contents_list a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ========================================
+   フッター
+   ======================================== */
+/* フッター全体 */
+footer {
+    background: #2f4f2f; /* ダークオリーブグリーン */
+    color: #f5f5dc; /* ベージュ */
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+/* コピーライト表示エリア */
+footer .copy_right {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* フッターナビゲーションリスト */
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* フッターリストアイテム */
+footer li {
+    list-style: none;
+}
+
+/* フッター内のリンク */
+footer a {
+    color: #daa520; /* ゴールデンロッド */
+    transition: color 0.3s ease;
+}
+
+/* フッターリンクのホバー効果 */
+footer a:hover {
+    color: #f5f5dc; /* ベージュ */
+}
+
+/* ========================================
+   レスポンシブデザイン（モバイル対応）
+   ======================================== */
+@media (max-width: 768px) {
+    /* モバイル用スクロールオフセット調整 */
+    html {
+        scroll-padding-top: 120px; /* モバイルでのヘッダー高さに合わせて調整 */
+    }
+    
+    section {
+        scroll-margin-top: 120px; /* モバイル用スクロールオフセット */
+    }
+    
+    /* モバイル用ヘッダー調整 */
+    .header-content {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 15px;
+    }
+    
+    .logo-text {
+        font-size: 1rem;
+    }
+    
+    .header-nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .header-nav a {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+    
+    .hero-section {
+        padding: 100px 15px 40px; /* モバイルでヘッダー高さを調整 */
+    }
+    
+    /* モバイルではマルキーアニメーションを停止して中央表示 */
+    .marquee_text {
+        animation: none; /* アニメーション停止 */
+        transform: none; /* 位置をリセット */
+        text-align: center;
+        font-size: 1.0rem;
+        padding: 0 10px;
+    }
+    /* モバイルでは日程カードを縦並びに */
+    .date-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    /* モバイルではコンテンツリストを縦並びに */
+    .contents_list {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* モバイルではフッターナビを縦並びに */
+    footer ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
