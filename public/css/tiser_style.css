@@ -569,11 +569,6 @@ h3::after {
     transition: transform 0.3s ease;
 }
 
-/* 日程カードのホバー時拡大効果 */
-.date-card:hover {
-    transform: scale(1.05);
-}
-
 /* 日程カード内のイベント名（前夜祭・本編） */
 .date-card span:first-child {
     display: block;
@@ -655,7 +650,7 @@ a:visited {
    ======================================== */
 /* コンテンツリストの親コンテナ */
 .contents_list {
-    display: flex;
+    display: grid;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
@@ -665,8 +660,9 @@ a:visited {
 .contents_list li {
     list-style: none;
     background: linear-gradient(135deg, #2f4f2f, #228b22, #8fbc8f); /* 森のグラデーション */
-    border-radius: 25px;
-    padding: 15px 30px;
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
