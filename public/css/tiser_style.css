@@ -645,6 +645,52 @@ a:visited {
     color: #6b8e23; /* オリーブグリーン */
 }
 
+/* ボタンスタイル */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 5px 10px;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
+/* プライマリボタン（メインアクション用） */
+.button-primary {
+    background: linear-gradient(135deg, #2f4f2f, #228b22); /* ダークオリーブから森緑 */
+    color: white;
+}
+
+.button-primary:hover {
+    color: white;
+}
+
+.button-primary:visited {
+    color: white;
+}
+
+/* セカンダリボタン（サブアクション用） */
+.button-secondary {
+    background: #f5f5dc; /* ベージュ */
+    color: #2f4f2f; /* ダークオリーブグリーン */
+    border: 2px solid #2f4f2f;
+}
+
+.button-secondary:hover {
+    color: #2f4f2f;
+}
+
+.button-secondary:visited {
+    color: #2f4f2f;
+}
+
 /* ========================================
    コンテンツリスト（ボタン風）
    ======================================== */
