@@ -170,6 +170,10 @@
                     <a href="https://fortee.jp/kinoko-2026/sponsor/form" target="_blank" rel="noreferrer noopener" class="button button-primary">スポンサー応募フォーム</a>
                 </p>
             </section>
+            <section id="sponsor-list-section" class="sponsor-list-section">
+                <h3>スポンサー一覧</h3>
+                <div id="sponsor-list"></div>
+            </section>
             <section id="about">
                 <h3>きのこカンファレンスとは</h3>
                 <p class="about-text">
@@ -304,6 +308,64 @@
             </div>
         </div>
     </footer>
+    <script>
+        const sponsorPlanConfig = [
+            { key: 'gold_api', displayName: 'ゴールド', tier: 'gold' },
+            { key: 'harapeco_api', displayName: 'はらぺこ', tier: 'harapeco' },
+            { key: 'silver_api', displayName: 'シルバー', tier: 'silver' }
+        ];
+
+        fetch('sponsor_list.json')
+            .then(response => response.json())
+            .then(data => {
+                const planMap = {};
+                data.sponsor_plans.forEach(plan => {
+                    planMap[plan.name] = plan.sponsors;
+                });
+
+                const listEl = document.getElementById('sponsor-list');
+
+                sponsorPlanConfig.forEach(config => {
+                    const sponsors = planMap[config.key];
+                    if (!sponsors || sponsors.length === 0) return;
+
+                    const planSection = document.createElement('div');
+                    planSection.className = 'sponsor-plan';
+
+                    const planTitle = document.createElement('h4');
+                    planTitle.className = 'sponsor-plan-title sponsor-plan-title--' + config.tier;
+                    planTitle.textContent = config.displayName;
+                    planSection.appendChild(planTitle);
+
+                    const grid = document.createElement('div');
+                    grid.className = 'sponsor-grid sponsor-grid--' + config.tier;
+
+                    sponsors.forEach(sponsor => {
+                        const card = document.createElement('a');
+                        card.className = 'sponsor-card sponsor-card--' + config.tier;
+                        card.href = sponsor.url || '#';
+                        card.target = '_blank';
+                        card.rel = 'noreferrer noopener';
+
+                        const name = document.createElement('div');
+                        name.className = 'sponsor-card__name';
+                        name.textContent = sponsor.name;
+                        card.appendChild(name);
+
+                        const pr = document.createElement('div');
+                        pr.className = 'sponsor-card__pr';
+                        pr.textContent = sponsor.pr;
+                        card.appendChild(pr);
+
+                        grid.appendChild(card);
+                    });
+
+                    planSection.appendChild(grid);
+                    listEl.appendChild(planSection);
+                });
+            })
+            .catch(error => console.error('Error loading sponsor list:', error));
+    </script>
 </body>
 
 </html>
