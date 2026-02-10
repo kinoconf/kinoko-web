@@ -1,108 +1,142 @@
 {
   "sponsor_plans": [
     {
-      "name": "platinum_api",
-      "sponsors": [
-        {
-          "id": "",
-          "name": "",
-          "kana": "",
-          "url": "",
-          "pr": "",
-          "twitter": "",
-          "avatar": ""
-        }
-      ],
-      "name_en": "platinum_api"
-    },
-    {
-      "name": "lunch_api",
-      "sponsors": [
-        {
-          "id": "",
-          "name": "",
-          "kana": "",
-          "url": "",
-          "pr": "",
-          "avatar": ""
-        }
-      ],
-      "name_en": "lunch_api"
-    },
-    {
-      "name": "coffee_api",
-      "sponsors": [
-        {
-          "id": "",
-          "name": "",
-          "kana": "",
-          "url": "",
-          "pr": "",
-          "twitter": "",
-          "avatar": ""
-        }
-      ],
-      "name_en": "coffee_api"
-    },
-    {
       "name": "gold_api",
       "sponsors": [
         {
-          "id": "",
-          "name": "",
-          "kana": "",
-          "url": "",
-          "pr": "",
-          "twitter": "",
-          "avatar": ""
+          "id": "94507835-2c53-4adf-a396-9451f332c6ae",
+          "name": "株式会社カケハシ",
+          "kana": "かぶしきがいしゃかけはし",
+          "url": "https://herp.careers/v1/kakehashiinc",
+          "pr": "株式会社カケハシは、「薬局DX」で日本の医療システムの再構築を目指すヘルステックスタートアップ企業です。テクノロジーを駆使し、患者さんにとってより良い医療を、医療現場にとって持続可能な形で実現します。",
+          "avatar": "https://fortee.jp/files/kinoko-2026/sponsor/94507835-2c53-4adf-a396-9451f332c6ae.png",
+          "custom_fields": {
+            "novelty": "送付なし"
+          }
+        },
+        {
+          "id": "8a7d80b1-5f2a-47fe-b44b-bfb90ebb0c4d",
+          "name": "転職ドラフト",
+          "kana": "てんしょくどらふと",
+          "url": "https://job-draft.jp/",
+          "pr": "転職ドラフトは、「年収も実力も磨ける仕事」に出会える、ITエンジニア向けの転職サービスです。\r\n年収付きのスカウトが企業から届く「転職ドラフトスカウト」、ITエンジニアキャリアのプロに相談できる「転職ドラフトエージェント」を運営しています。",
+          "twitter": "tensyoku_draft"
         }
-      ],
-      "name_en": "gold_api"
+      ]
+    },
+    {
+      "name": "harapeco_api",
+      "sponsors": [
+        {
+          "id": "fbfe3e6b-e969-4953-97a3-80656c974ec9",
+          "name": "株式会社クイック",
+          "kana": "かぶしきかいしゃくいっく",
+          "url": "https://quick-wpd.notion.site/",
+          "pr": "総合HRサービス企業の株式会社クイックです。 Web事業企画開発本部は、当社が展開する業界特化型人材紹介サービスのプロダクト開発や全社のDX推進を担っており、各領域でトップクラスのシェアを誇るサービスを数多く展開しています。＃看護roo!",
+          "avatar": "https://fortee.jp/files/kinoko-2026/sponsor/fbfe3e6b-e969-4953-97a3-80656c974ec9.png",
+          "custom_fields": {
+            "zenyasai": "参加",
+            "konshinkai": "参加",
+            "novelty": "送付予定"
+          }
+        },
+        {
+          "id": "f20c8a0e-606c-4f9e-beda-90a127a526c6",
+          "name": "株式会社SmartHR",
+          "kana": "かぶしきがいしゃ　すまーとえいちあーる",
+          "url": "https://hello-world.smarthr.co.jp/",
+          "pr": "株式会社SmartHRでは、プロダクトエンジニアをはじめとして、CREやQAエンジニア、アクセシビリティエンジニアなど、エンジニアとしての経験を大いに生かしていただける様々な職種で積極採用中です！ぜひお気軽にお声がけください！",
+          "twitter": "smarthr_dev"
+        },
+        {
+          "id": "7bf803c8-f247-457b-a7e6-052b59b65459",
+          "name": "株式会社hacomono",
+          "kana": "かぶしきがいしゃ はこもの",
+          "url": "https://www.hacomono.co.jp/",
+          "pr": "hacomonoはウェルネス産業向けに入会・予約・決済・会員管理をデジタル化するVertical SaaS企業です。ジュニアスクールからプロアスリート、公共施設まで幅広く、全国11,000店舗以上が導入する産業のインフラへと成長しています。",
+          "twitter": "hacomono_Dev"
+        },
+        {
+          "id": "6570810f-a3bf-4492-ab3e-9db5953d7f58",
+          "name": "事業共創カンパニーRelic",
+          "kana": "じぎょうきょうそうかんぱにーれりっく",
+          "url": "https://relic.co.jp/",
+          "pr": "株式会社Relicは、新規事業に特化したSaaS提供、事業プロデュース、投資・共同事業を統合的に展開し、5,000社以上、25社・350名超、全国17都道府県で日本企業の新規事業開発とイノベーション創出を支援する事業共創カンパニーです。",
+          "twitter": "Relic_tech"
+        }
+      ]
     },
     {
       "name": "silver_api",
       "sponsors": [
         {
-          "id": "",
-          "name": "",
-          "kana": "",
-          "url": "",
-          "pr": "",
-          "twitter": "",
-          "avatar": ""
+          "id": "bfaf94da-cf33-4a08-babd-2f11b15c3c65",
+          "name": "合同会社エンジニアリングマネージメント",
+          "kana": "ごうどうがいしゃ　えんじにありんぐまねーじめんと",
+          "url": "https://www.engmgmt.tech/",
+          "pr": "AX、DX、IT開発組織の採用・定着・育成をキーワードに事業を展開しております。制度設計や組織のテコ入れ、制度設計などのご相談もお気軽にお声がけください。",
+          "twitter": "makaibito",
+          "avatar": "https://fortee.jp/files/kinoko-2026/sponsor/bfaf94da-cf33-4a08-babd-2f11b15c3c65.jpg"
         }
-      ],
-      "name_en": "silver_api"
+      ]
     },
     {
-      "name": "venue",
+      "name": "room_api",
       "sponsors": [
         {
-          "id": "",
-          "name": "",
-          "kana": "",
-          "url": "",
-          "pr": "",
-          "twitter": "",
-          "avatar": ""
+          "id": "8a7d80b1-5f2a-47fe-b44b-bfb90ebb0c4d",
+          "name": "転職ドラフト",
+          "kana": "てんしょくどらふと",
+          "url": "https://job-draft.jp/",
+          "pr": "転職ドラフトは、「年収も実力も磨ける仕事」に出会える、ITエンジニア向けの転職サービスです。\r\n年収付きのスカウトが企業から届く「転職ドラフトスカウト」、ITエンジニアキャリアのプロに相談できる「転職ドラフトエージェント」を運営しています。",
+          "twitter": "tensyoku_draft"
         }
-      ],
-      "name_en": "venue"
+      ]
     },
     {
-      "name": "beer_api",
+      "name": "custom_api",
       "sponsors": [
         {
-          "id": "",
-          "name": "",
-          "kana": "",
-          "url": "",
-          "pr": "",
-          "twitter": "",
-          "avatar": ""
+          "id": "fbfe3e6b-e969-4953-97a3-80656c974ec9",
+          "name": "株式会社クイック",
+          "kana": "かぶしきかいしゃくいっく",
+          "url": "https://quick-wpd.notion.site/",
+          "pr": "総合HRサービス企業の株式会社クイックです。 Web事業企画開発本部は、当社が展開する業界特化型人材紹介サービスのプロダクト開発や全社のDX推進を担っており、各領域でトップクラスのシェアを誇るサービスを数多く展開しています。＃看護roo!",
+          "avatar": "https://fortee.jp/files/kinoko-2026/sponsor/fbfe3e6b-e969-4953-97a3-80656c974ec9.png",
+          "custom_fields": {
+            "zenyasai": "参加",
+            "konshinkai": "参加",
+            "novelty": "送付予定"
+          }
+        },
+        {
+          "id": "94507835-2c53-4adf-a396-9451f332c6ae",
+          "name": "株式会社カケハシ",
+          "kana": "かぶしきがいしゃかけはし",
+          "url": "https://herp.careers/v1/kakehashiinc",
+          "pr": "株式会社カケハシは、「薬局DX」で日本の医療システムの再構築を目指すヘルステックスタートアップ企業です。テクノロジーを駆使し、患者さんにとってより良い医療を、医療現場にとって持続可能な形で実現します。",
+          "avatar": "https://fortee.jp/files/kinoko-2026/sponsor/94507835-2c53-4adf-a396-9451f332c6ae.png",
+          "custom_fields": {
+            "novelty": "送付なし"
+          }
+        },
+        {
+          "id": "8a7d80b1-5f2a-47fe-b44b-bfb90ebb0c4d",
+          "name": "転職ドラフト",
+          "kana": "てんしょくどらふと",
+          "url": "https://job-draft.jp/",
+          "pr": "転職ドラフトは、「年収も実力も磨ける仕事」に出会える、ITエンジニア向けの転職サービスです。\r\n年収付きのスカウトが企業から届く「転職ドラフトスカウト」、ITエンジニアキャリアのプロに相談できる「転職ドラフトエージェント」を運営しています。",
+          "twitter": "tensyoku_draft"
+        },
+        {
+          "id": "7bf803c8-f247-457b-a7e6-052b59b65459",
+          "name": "株式会社hacomono",
+          "kana": "かぶしきがいしゃ はこもの",
+          "url": "https://www.hacomono.co.jp/",
+          "pr": "hacomonoはウェルネス産業向けに入会・予約・決済・会員管理をデジタル化するVertical SaaS企業です。ジュニアスクールからプロアスリート、公共施設まで幅広く、全国11,000店舗以上が導入する産業のインフラへと成長しています。",
+          "twitter": "hacomono_Dev"
         }
-      ],
-      "name_en": "beer_api"
+      ]
     }
   ]
 }
