@@ -326,8 +326,8 @@
                 const listEl = document.getElementById('sponsor-list');
 
                 sponsorPlanConfig.forEach(config => {
-                    const sponsors = planMap[config.key];
-                    if (!sponsors || sponsors.length === 0) return;
+                    const sponsors = (planMap[config.key] || []).filter(s => !!s.avatar);
+                    if (sponsors.length === 0) return;
 
                     const planSection = document.createElement('div');
                     planSection.className = 'sponsor-plan';
@@ -347,15 +347,16 @@
                         card.target = '_blank';
                         card.rel = 'noreferrer noopener';
 
+                        const img = document.createElement('img');
+                        img.className = 'sponsor-card__avatar';
+                        img.src = sponsor.avatar;
+                        img.alt = sponsor.name;
+                        card.appendChild(img);
+
                         const name = document.createElement('div');
                         name.className = 'sponsor-card__name';
                         name.textContent = sponsor.name;
                         card.appendChild(name);
-
-                        const pr = document.createElement('div');
-                        pr.className = 'sponsor-card__pr';
-                        pr.textContent = sponsor.pr;
-                        card.appendChild(pr);
 
                         grid.appendChild(card);
                     });
