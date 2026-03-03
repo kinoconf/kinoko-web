@@ -692,6 +692,123 @@ a:visited {
 }
 
 /* ========================================
+   スポンサー一覧セクション
+   ======================================== */
+.sponsor-list-section {
+    text-align: center;
+}
+
+.sponsor-plan {
+    margin-bottom: 40px;
+}
+
+.sponsor-plan:last-child {
+    margin-bottom: 0;
+}
+
+/* プランタイトル共通 */
+.sponsor-plan-title {
+    display: inline-block;
+    padding: 6px 24px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.sponsor-plan-title--gold {
+    background: linear-gradient(135deg, #b8860b, #daa520, #ffd700);
+    font-size: 1.4rem;
+}
+
+.sponsor-plan-title--harapeco {
+    background: linear-gradient(135deg, #2f4f2f, #228b22);
+    font-size: 1.2rem;
+}
+
+.sponsor-plan-title--silver {
+    background: linear-gradient(135deg, #708090, #a9a9a9, #c0c0c0);
+    font-size: 1.1rem;
+}
+
+/* スポンサーグリッド */
+.sponsor-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* スポンサーカード共通 */
+.sponsor-card {
+    display: block;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    color: #333;
+}
+
+.sponsor-card:visited {
+    color: #333;
+}
+
+/* アバター画像共通 */
+.sponsor-card__avatar {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* ゴールド - 大きめカード */
+.sponsor-card--gold {
+    width: 340px;
+    padding: 24px;
+    border: 2px solid #daa520;
+}
+
+.sponsor-card--gold .sponsor-card__name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #8b6914;
+}
+
+/* はらぺこ - 中くらいカード */
+.sponsor-card--harapeco {
+    width: 280px;
+    border: 2px solid #228b22;
+}
+
+.sponsor-card--harapeco .sponsor-card__name {
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: #2f4f2f;
+}
+
+/* シルバー - 小さめカード */
+.sponsor-card--silver {
+    width: 220px;
+    padding: 16px;
+    border: 2px solid #a9a9a9;
+}
+
+.sponsor-card--silver .sponsor-card__name {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* ========================================
    コンテンツリスト（ボタン風）
    ======================================== */
 /* コンテンツリストの親コンテナ */
@@ -934,5 +1051,13 @@ footer a:hover {
         text-align: center;
         flex-direction: column;
         gap: 15px;
+    }
+
+    /* スポンサーカード - モバイル調整 */
+    .sponsor-card--gold,
+    .sponsor-card--harapeco,
+    .sponsor-card--silver {
+        width: 100%;
+        max-width: 340px;
     }
 }
