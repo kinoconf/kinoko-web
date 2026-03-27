@@ -100,6 +100,11 @@ const sponsorPlanSettings = {
         displayName: 'シルバースポンサー',
         imageClass: 'small',
         cardCssName: 'uk-width-1-2@s uk-width-1-3@m'
+    },
+    tool_api: {
+        displayName: 'ツールスポンサー',
+        imageClass: 'medium',
+        cardCssName: 'uk-width-1-2@s uk-width-1-3@m'
     }
 }
 
@@ -109,7 +114,9 @@ const sponsorPlanSettings = {
 fetch('sponsor_list.json')
     .then(response => response.json())
     .then(data => {
-        const obj = {}
+        const obj = {
+            tool_api: [{ name: 'esa', url: 'https://esa.io/', image: '../image/esa-sponsor-logo.png' }]
+        }
         data.sponsor_plans.forEach(plan => {
             const sponsors = plan.sponsors
                 .filter(sponsor => !!sponsor.avatar)
