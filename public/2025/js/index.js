@@ -129,6 +129,19 @@ fetch('sponsor_list.json')
     })
     .catch(error => console.error('Error loading sponsor list:', error));
 
+// ツールスポンサー（直書き）
+const toolSponsors = [
+    { name: 'esa', url: 'https://esa.io/', image: '../image/esa-sponsor-logo.png' }
+];
+const toolSetting = {
+    displayName: 'ツールスポンサー',
+    imageClass: 'medium',
+    cardCssName: 'uk-width-1-2@s uk-width-1-3@m'
+};
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('sponsor-list').appendChild(sponsorCard(toolSponsors, toolSetting));
+});
+
 const sponsorCard = (sponsors, setting) => {
     const sponsorPlanAria = document.createElement('div');
     sponsorPlanAria.className = 'uk-text-center uk-margin-top';
