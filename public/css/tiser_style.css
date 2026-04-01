@@ -770,6 +770,19 @@ a:visited {
     margin-bottom: 10px;
 }
 
+/* プラチナ - 最大カード */
+.sponsor-card--platinum {
+    width: 400px;
+    padding: 28px;
+    border: 2px solid #a0b0c0;
+}
+
+.sponsor-card--platinum .sponsor-card__name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #4a5a6a;
+}
+
 /* ゴールド - 大きめカード */
 .sponsor-card--gold {
     width: 340px;
