@@ -305,7 +305,8 @@
         const sponsorPlanConfig = [
             { key: 'gold_api', displayName: 'ゴールド', tier: 'gold' },
             { key: 'harapeco_api', displayName: 'はらぺこ', tier: 'harapeco' },
-            { key: 'silver_api', displayName: 'シルバー', tier: 'silver' }
+            { key: 'silver_api', displayName: 'シルバー', tier: 'silver' },
+            { key: 'tool_api', displayName: 'ツール', tier: 'gold' }
         ];
 
         fetch('sponsor_list.json')
@@ -315,6 +316,9 @@
                 data.sponsor_plans.forEach(plan => {
                     planMap[plan.name] = plan.sponsors;
                 });
+                planMap['tool_api'] = [
+                    { name: 'esa', url: 'https://esa.io/', avatar: 'image/esa-sponsor-logo.png' }
+                ];
 
                 const listEl = document.getElementById('sponsor-list');
 
