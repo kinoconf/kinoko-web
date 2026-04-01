@@ -1,6 +1,19 @@
 {
   "sponsor_plans": [
     {
+      "name": "platinum_api",
+      "sponsors": [
+        {
+          "id": "dbccb126-d4d0-4231-8c25-5d99714b0fbe",
+          "name": "株式会社hokan",
+          "kana": "かぶしきがいしゃほかん",
+          "url": "https://recruit-engineer.hkn.jp/",
+          "pr": "紙文化と複雑な規制が残る保険業界。「hokan®︎」は今年の法改正で厳格化される監査対応と業務効率化を同時に実現する保険業界特化のクラウド型顧客・契約管理システム。46兆円市場のDXを牽引し、保険流通を支えるインフラを目指します。",
+          "avatar": "https://fortee.jp/files/kinoko-2026/sponsor/dbccb126-d4d0-4231-8c25-5d99714b0fbe.png"
+        }
+      ]
+    },
+    {
       "name": "gold_api",
       "sponsors": [
         {
@@ -120,7 +133,16 @@
           "kana": "かぶしきがいしゃきっくふろー",
           "url": "https://careers.kickflow.co.jp/?utm_source=offline&utm_medium=flyer&utm_campaign=event_common",
           "pr": "私たちは、企業向けのクラウドワークフローであるkickflowを開発・提供しています。\r\nkickflowは企業の生産性向上で高く評価されており、大手企業や成長中の企業に導入されています。",
-          "twitter": "kickflowcom"
+          "twitter": "kickflowcom",
+          "avatar": "https://fortee.jp/files/kinoko-2026/sponsor/25df10bd-1f9a-48a8-9109-78e2a5d89703.png"
+        },
+        {
+          "id": "9c26d140-6efc-4ae1-b685-b7e33908362a",
+          "name": "株式会社Gaji-Labo",
+          "kana": "かぶしきがいしゃがじらぼ",
+          "url": "https://www.gaji.jp/",
+          "pr": "Gaji-Labo は事業会社やスタートアップのプロダクト成長を支援する会社です。UIデザインからプロダクト開発まで一貫してプロダクトの価値を最大限に引き出し、チームワークでお客さまを支援します。",
+          "twitter": "gaji_labo"
         }
       ]
     },
@@ -142,30 +164,6 @@
       "name": "custom_api",
       "sponsors": [
         {
-          "id": "fbfe3e6b-e969-4953-97a3-80656c974ec9",
-          "name": "株式会社クイック",
-          "kana": "かぶしきかいしゃくいっく",
-          "url": "https://quick-wpd.notion.site/",
-          "pr": "総合HRサービス企業の株式会社クイックです。 Web事業企画開発本部は、当社が展開する業界特化型人材紹介サービスのプロダクト開発や全社のDX推進を担っており、各領域でトップクラスのシェアを誇るサービスを数多く展開しています。＃看護roo!",
-          "avatar": "https://fortee.jp/files/kinoko-2026/sponsor/fbfe3e6b-e969-4953-97a3-80656c974ec9.png",
-          "custom_fields": {
-            "zenyasai": "参加",
-            "konshinkai": "参加",
-            "novelty": "送付予定"
-          }
-        },
-        {
-          "id": "94507835-2c53-4adf-a396-9451f332c6ae",
-          "name": "株式会社カケハシ",
-          "kana": "かぶしきがいしゃかけはし",
-          "url": "https://herp.careers/v1/kakehashiinc",
-          "pr": "株式会社カケハシは、「薬局DX」で日本の医療システムの再構築を目指すヘルステックスタートアップ企業です。テクノロジーを駆使し、患者さんにとってより良い医療を、医療現場にとって持続可能な形で実現します。",
-          "avatar": "https://fortee.jp/files/kinoko-2026/sponsor/94507835-2c53-4adf-a396-9451f332c6ae.png",
-          "custom_fields": {
-            "novelty": "送付なし"
-          }
-        },
-        {
           "id": "8a7d80b1-5f2a-47fe-b44b-bfb90ebb0c4d",
           "name": "転職ドラフト",
           "kana": "てんしょくどらふと",
@@ -174,6 +172,25 @@
           "twitter": "tensyoku_draft",
           "avatar": "https://fortee.jp/files/kinoko-2026/sponsor/8a7d80b1-5f2a-47fe-b44b-bfb90ebb0c4d.png"
         },
+        {
+          "id": "7bf803c8-f247-457b-a7e6-052b59b65459",
+          "name": "株式会社hacomono",
+          "kana": "かぶしきがいしゃ はこもの",
+          "url": "https://www.hacomono.co.jp/",
+          "pr": "hacomonoはウェルネス産業向けに入会・予約・決済・会員管理をデジタル化するVertical SaaS企業です。ジュニアスクールからプロアスリート、公共施設まで幅広く、全国11,000店舗以上が導入する産業のインフラへと成長しています。",
+          "twitter": "hacomono_Dev",
+          "avatar": "https://fortee.jp/files/kinoko-2026/sponsor/7bf803c8-f247-457b-a7e6-052b59b65459.png",
+          "custom_fields": {
+            "zenyasai": "参加",
+            "konshinkai": "参加",
+            "novelty": "送付予定"
+          }
+        }
+      ]
+    },
+    {
+      "name": "体操",
+      "sponsors": [
         {
           "id": "7bf803c8-f247-457b-a7e6-052b59b65459",
           "name": "株式会社hacomono",
