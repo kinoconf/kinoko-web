@@ -716,6 +716,11 @@ a:visited {
     color: white;
 }
 
+.sponsor-plan-title--platinum {
+    background: linear-gradient(135deg, #6a7f8f, #a0b4c4, #d0e0ec);
+    font-size: 1.5rem;
+}
+
 .sponsor-plan-title--gold {
     background: linear-gradient(135deg, #b8860b, #daa520, #ffd700);
     font-size: 1.4rem;
@@ -768,6 +773,19 @@ a:visited {
     height: auto;
     object-fit: contain;
     margin-bottom: 10px;
+}
+
+/* プラチナ - 最大カード */
+.sponsor-card--platinum {
+    width: 400px;
+    padding: 28px;
+    border: 2px solid #a0b0c0;
+}
+
+.sponsor-card--platinum .sponsor-card__name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #4a5a6a;
 }
 
 /* ゴールド - 大きめカード */

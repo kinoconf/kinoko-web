@@ -1,6 +1,19 @@
 {
   "sponsor_plans": [
     {
+      "name": "platinum_api",
+      "sponsors": [
+        {
+          "id": "dbccb126-d4d0-4231-8c25-5d99714b0fbe",
+          "name": "株式会社hokan",
+          "kana": "かぶしきがいしゃほかん",
+          "url": "https://recruit-engineer.hkn.jp/",
+          "pr": "紙文化と複雑な規制が残る保険業界。「hokan®︎」は今年の法改正で厳格化される監査対応と業務効率化を同時に実現する保険業界特化のクラウド型顧客・契約管理システム。46兆円市場のDXを牽引し、保険流通を支えるインフラを目指します。",
+          "avatar": "https://fortee.jp/files/kinoko-2026/sponsor/dbccb126-d4d0-4231-8c25-5d99714b0fbe.png"
+        }
+      ]
+    },
+    {
       "name": "gold_api",
       "sponsors": [
         {
@@ -122,6 +135,14 @@
           "pr": "私たちは、企業向けのクラウドワークフローであるkickflowを開発・提供しています。\r\nkickflowは企業の生産性向上で高く評価されており、大手企業や成長中の企業に導入されています。",
           "twitter": "kickflowcom",
           "avatar": "https://fortee.jp/files/kinoko-2026/sponsor/25df10bd-1f9a-48a8-9109-78e2a5d89703.png"
+        },
+        {
+          "id": "9c26d140-6efc-4ae1-b685-b7e33908362a",
+          "name": "株式会社Gaji-Labo",
+          "kana": "かぶしきがいしゃがじらぼ",
+          "url": "https://www.gaji.jp/",
+          "pr": "Gaji-Labo は事業会社やスタートアップのプロダクト成長を支援する会社です。UIデザインからプロダクト開発まで一貫してプロダクトの価値を最大限に引き出し、チームワークでお客さまを支援します。",
+          "twitter": "gaji_labo"
         }
       ]
     },
