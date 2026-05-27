@@ -1,0 +1,157 @@
+<!--
+　　　　　　　　　　きのこっのっこーのこ
+　　　　／⌒ヽ　　　　　　γ´⌒｀ヽ
+　　 ／　　●　 ヽ　　　 ./Oo〇oOヽ　　 　 ,-''"¨￣¨`'‐、
+　　（●／⌒ヽ●）　　 （Oγ⌒ヽOo）　　 (,,(,,i,,,i,,,,,,,,i,,,,i,,),)
+　　　ヽ|´∀｀　|ノ　））　 ヾ（ﾟДﾟ　）ﾟノ　））　 　 ）　　（　　　 ））
+　　　　.ゝ＿__ﾉ　　　　　　　ゝ＿ﾉ.　　　　　　 （ﾟーﾟ* ）
+　　　　　　　　　　　　　　　　　　　　 　 　 　 　 ￣￣
+　　　　　　　　　　　　げんきのこっ♪
+-->
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>参加者アンケート結果 | きのこカンファレンス2026</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="きのこカンファレンス2026 参加者アンケート結果" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/tiser_style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=BIZ+UDPGothic|Montserrat">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@latest/dist/apexcharts.min.js"></script>
+    <style>
+        .enquete-hero {
+            background: linear-gradient(135deg, #228b22, #8fbc8f, #daa520, #a0522d, #6b8e23);
+            background-size: 400% 400%;
+            animation: heroGrad 12s ease infinite;
+            padding: 120px 20px 60px;
+            text-align: center;
+        }
+
+        @keyframes heroGrad {
+            0%   { background-position: 0% 50%; }
+            50%  { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .enquete-hero h1 {
+            font-size: clamp(1.6rem, 5vw, 2.8rem);
+            color: #fff;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+            margin-bottom: 12px;
+        }
+
+        .enquete-hero p {
+            color: #f5f5dc;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .enquete-main {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 40px 20px 80px;
+        }
+
+        #charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+            gap: 28px;
+        }
+
+        .chart-card {
+            background: #f5f5dc;
+            border-radius: 12px;
+            padding: 28px 24px 16px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .chart-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.24);
+        }
+
+        .chart-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #2f4f2f;
+            margin-bottom: 6px;
+            line-height: 1.5;
+            border-left: 4px solid #daa520;
+            padding-left: 10px;
+        }
+
+        .vote-count {
+            font-size: 0.82rem;
+            color: #6b5a2a;
+            margin-bottom: 12px;
+            padding-left: 14px;
+        }
+
+        .chart-area {
+            width: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 24px;
+            color: #f5f5dc;
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: #daa520;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            #charts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .enquete-main {
+                padding: 24px 12px 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="fixed-header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">🍄</span>
+                <span class="logo-text">きのこカンファレンス2026</span>
+            </div>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="/">トップ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="enquete-hero">
+        <h1>🍄 参加者アンケート結果</h1>
+        <p>きのこカンファレンス2026 ご参加いただいた皆さまのアンケート集計です</p>
+        <p id="updated-at" style="margin-top:8px; font-size:0.85rem; opacity:0.75;"></p>
+    </div>
+
+    <div class="enquete-main">
+        <div id="charts-grid"></div>
+    </div>
+
+    <footer>
+        <hr />
+        <div>
+            &copy; <a target="_blank" rel="noreferrer noopener" href="https://x.com/kinoko_conf">きのこカンファレンス実行委員会</a> 🍄
+        </div>
+    </footer>
+
+    <script src="js/enquete_sort.js"></script>
+    <script src="js/enquete.js"></script>
+</body>
+
+</html>
