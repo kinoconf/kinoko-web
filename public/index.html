@@ -316,7 +316,6 @@
             { key: 'gold_api', displayName: 'ゴールド', tier: 'gold' },
             { key: 'harapeco_api', displayName: 'はらぺこ', tier: 'harapeco' },
             { key: 'silver_api', displayName: 'シルバー', tier: 'silver' },
-            { key: 'picture_api', displayName: '写真スポンサー', tier: 'gold' },
             { key: 'childcare_api', displayName: '託児スポンサー', tier: 'gold' },
             { key: 'tool_api', displayName: 'ツール', tier: 'gold' }
         ];
@@ -328,9 +327,6 @@
                 data.sponsor_plans.forEach(plan => {
                     planMap[plan.name] = plan.sponsors;
                 });
-                planMap['picture_api'] = [
-                    { name: '千株式会社', url: 'https://sencorp.co.jp/recruit-career/development/', avatar: 'image/sen_sponsor_logo_RGB.svg' }
-                ];
                 planMap['childcare_api'] = [
                     { name: 'THE BIGLE株式会社', url: 'https://x.com/satoshoco', avatar: 'image/bigle_sponsor_logo.png' }
                 ];
