@@ -872,6 +872,93 @@ a:visited {
 }
 
 /* ========================================
+   スタッフリスト
+   ======================================== */
+.staff-section {
+    text-align: center;
+}
+
+.staff-group {
+    margin-bottom: 40px;
+}
+
+.staff-group:last-child {
+    margin-bottom: 0;
+}
+
+.staff-group-title {
+    display: inline-block;
+    padding: 6px 24px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+    background: linear-gradient(135deg, #4a7c59, #6abf69);
+    font-size: 1.2rem;
+}
+
+.staff-grid {
+    display: grid;
+    justify-content: center;
+    gap: 24px 16px;
+    margin: 0 auto;
+}
+
+.staff-grid--core {
+    grid-template-columns: repeat(auto-fill, 160px);
+    max-width: calc(5 * 160px + 4 * 24px);
+}
+
+.staff-grid--1day {
+    grid-template-columns: repeat(auto-fill, 130px);
+    max-width: calc(6 * 130px + 5 * 24px);
+}
+
+.staff-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease;
+}
+
+.staff-card:hover {
+    transform: translateY(-4px);
+    text-decoration: none;
+    color: #333;
+}
+
+.staff-card__avatar {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 8px;
+    border: 2px solid #e0e0e0;
+}
+
+.staff-card__avatar--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #4a7c59, #6abf69);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.staff-card__name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* ========================================
    コンテンツリスト（ボタン風）
    ======================================== */
 /* コンテンツリストの親コンテナ */
@@ -1122,5 +1209,11 @@ footer a:hover {
     .sponsor-card--silver {
         width: 100%;
         max-width: 340px;
+    }
+}
+
+@media (max-width: 480px) {
+    .staff-grid--1day {
+        grid-template-columns: repeat(2, 130px);
     }
 }
