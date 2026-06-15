@@ -906,12 +906,12 @@ a:visited {
 
 .staff-grid--core {
     grid-template-columns: repeat(auto-fill, 160px);
-    max-width: calc(5 * 160px + 4 * 24px);
+    max-width: calc(5 * 160px + 4 * 16px);
 }
 
 .staff-grid--1day {
     grid-template-columns: repeat(auto-fill, 130px);
-    max-width: calc(6 * 130px + 5 * 24px);
+    max-width: calc(6 * 130px + 5 * 16px);
 }
 
 .staff-card {
