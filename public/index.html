@@ -252,6 +252,11 @@
 
             </section>
 
+            <section id="staff" class="staff-section">
+                <h3>スタッフ</h3>
+                <div id="staff-list"></div>
+            </section>
+
             <section id="contents">
                 <h3>コンテンツ</h3>
                 <ul class="contents_list">
@@ -377,6 +382,66 @@
                 });
             })
             .catch(error => console.error('Error loading sponsor list:', error));
+
+        fetch('staff_list.json')
+            .then(response => response.json())
+            .then(data => {
+                const listEl = document.getElementById('staff-list');
+                const groups = [
+                    { key: 'core', displayName: '運営スタッフ' },
+                    { key: '1day', displayName: 'ボランティアスタッフ' }
+                ];
+
+                groups.forEach(group => {
+                    const members = data.staff[group.key] || [];
+                    if (members.length === 0) return;
+
+                    const groupSection = document.createElement('div');
+                    groupSection.className = 'staff-group';
+
+                    const groupTitle = document.createElement('h4');
+                    groupTitle.className = 'staff-group-title';
+                    groupTitle.textContent = group.displayName;
+                    groupSection.appendChild(groupTitle);
+
+                    const grid = document.createElement('div');
+                    grid.className = 'staff-grid staff-grid--' + group.key;
+
+                    members.forEach(member => {
+                        const card = member.url ? document.createElement('a') : document.createElement('div');
+                        card.className = 'staff-card';
+                        if (member.url) {
+                            card.href = member.url;
+                            card.target = '_blank';
+                            card.rel = 'noreferrer noopener';
+                        }
+
+                        if (member.avatar_url) {
+                            const img = document.createElement('img');
+                            img.className = 'staff-card__avatar';
+                            img.src = member.avatar_url;
+                            img.alt = member.name;
+                            card.appendChild(img);
+                        } else {
+                            const placeholder = document.createElement('div');
+                            placeholder.className = 'staff-card__avatar staff-card__avatar--placeholder';
+                            placeholder.textContent = member.name.charAt(0);
+                            card.appendChild(placeholder);
+                        }
+
+                        const name = document.createElement('div');
+                        name.className = 'staff-card__name';
+                        name.textContent = member.name;
+                        card.appendChild(name);
+
+                        grid.appendChild(card);
+                    });
+
+                    groupSection.appendChild(grid);
+                    listEl.appendChild(groupSection);
+                });
+            })
+            .catch(error => console.error('Error loading staff list:', error));
     </script>
 </body>
 
