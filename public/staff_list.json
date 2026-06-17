@@ -54,6 +54,12 @@
         "avatar_url": "https://fortee.jp/files/kinoko-2026/avatar/bc44d020-c2d1-4463-b5b2-48a718e9e833.jpg"
       },
       {
+        "id": "3a3431ea-238d-4dfd-bd2c-e94ae57df072",
+        "name": "にしはら",
+        "url": "https://twitter.com/nishihara_job",
+        "avatar_url": "https://fortee.jp/files/kinoko-2026/avatar/3a3431ea-238d-4dfd-bd2c-e94ae57df072.jpg"
+      },
+      {
         "id": "4a7c1067-fb63-4602-8bf3-959cba1808d1",
         "name": "ふれーむ",
         "url": "https://twitter.com/ditflame",
@@ -74,10 +80,15 @@
       {
         "id": "a8f0174b-d864-47e1-b7c8-77b79fb48a5a",
         "name": "やし",
-        "avatar_url": "https://fortee.jp/files/kinoko-2026/avatar/a8f0174b-d864-47e1-b7c8-77b79fb48a5a.jpg"
+        "url": "https://twitter.com/yashi848484"
       }
     ],
     "1day": [
+      {
+        "id": "44180915-8387-4ab4-b62b-b2fcf370e22a",
+        "name": "dochin",
+        "avatar_url": "https://fortee.jp/files/kinoko-2026/avatar/44180915-8387-4ab4-b62b-b2fcf370e22a.jpg"
+      },
       {
         "id": "b0ce9255-2e19-439e-8247-fab04250a170",
         "name": "fkuMnk",
@@ -146,6 +157,12 @@
         "avatar_url": "https://fortee.jp/files/kinoko-2026/avatar/e62f48bc-a660-4f88-b01f-49e7741b261a.jpg"
       },
       {
+        "id": "210ff939-7018-49df-9362-5c01c419d846",
+        "name": "おさない",
+        "url": "https://twitter.com/000sak000",
+        "avatar_url": "https://fortee.jp/files/kinoko-2026/avatar/210ff939-7018-49df-9362-5c01c419d846.jpg"
+      },
+      {
         "id": "bf320cc3-1652-4519-b518-5d536a692134",
         "name": "げんげん",
         "url": "https://twitter.com/gengenmusic0719",
@@ -173,6 +190,12 @@
         "id": "69c58eee-aecc-4f7f-bbf6-e488afb6d462",
         "name": "にわさと",
         "avatar_url": "https://fortee.jp/files/kinoko-2026/avatar/69c58eee-aecc-4f7f-bbf6-e488afb6d462.jpg"
+      },
+      {
+        "id": "ffafe9ec-ed4c-45f0-b657-0664ba862062",
+        "name": "ばばしお",
+        "url": "https://twitter.com/tokyo_887",
+        "avatar_url": "https://fortee.jp/files/kinoko-2026/avatar/ffafe9ec-ed4c-45f0-b657-0664ba862062.png"
       },
       {
         "id": "f943997a-2706-4b50-a99b-47f41eb40217",
