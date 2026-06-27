@@ -97,6 +97,12 @@
     ],
     "1day": [
       {
+        "id": "86f69433-89e5-472a-abd0-25e874301dd7",
+        "name": "arishow",
+        "url": "https://twitter.com/arishow14",
+        "avatar_url": "https://fortee.jp/files/kinoko-2026/avatar/86f69433-89e5-472a-abd0-25e874301dd7.jpg"
+      },
+      {
         "id": "44180915-8387-4ab4-b62b-b2fcf370e22a",
         "name": "dochin",
         "avatar_url": "https://fortee.jp/files/kinoko-2026/avatar/44180915-8387-4ab4-b62b-b2fcf370e22a.jpg"
@@ -126,6 +132,18 @@
         "avatar_url": "https://fortee.jp/files/kinoko-2026/avatar/a896ea77-dbc1-4d5c-a637-22c1f764c35e.jpg"
       },
       {
+        "id": "72885612-3d0b-415c-9fcf-8f601190257f",
+        "name": "koty",
+        "url": "https://twitter.com/koty",
+        "avatar_url": "https://fortee.jp/files/kinoko-2026/avatar/72885612-3d0b-415c-9fcf-8f601190257f.jpg"
+      },
+      {
+        "id": "121a6fe0-0bd9-4858-b0f0-99c0d8434e85",
+        "name": "kushun",
+        "url": "https://github.com/https://github.com/makiharu",
+        "avatar_url": "https://fortee.jp/files/kinoko-2026/avatar/121a6fe0-0bd9-4858-b0f0-99c0d8434e85.jpg"
+      },
+      {
         "id": "e7a3e17b-2088-48b8-b93d-2d84b21591d5",
         "name": "Naoki Kawamura",
         "url": "https://twitter.com/iwonder118",
@@ -134,7 +152,8 @@
       {
         "id": "b9cc2f3a-e6b4-44ad-92e5-2fc6e4df4fd9",
         "name": "natty",
-        "url": "https://twitter.com/natty_natty254"
+        "url": "https://twitter.com/natty_natty254",
+        "avatar_url": "https://fortee.jp/files/kinoko-2026/avatar/b9cc2f3a-e6b4-44ad-92e5-2fc6e4df4fd9.jpg"
       },
       {
         "id": "cee4dc47-5022-4d0d-9a6c-85f491e70207",
@@ -166,7 +185,20 @@
       {
         "id": "e62f48bc-a660-4f88-b01f-49e7741b261a",
         "name": "yussak",
+        "url": "https://twitter.com/yussak213",
         "avatar_url": "https://fortee.jp/files/kinoko-2026/avatar/e62f48bc-a660-4f88-b01f-49e7741b261a.jpg"
+      },
+      {
+        "id": "58bca5c5-2531-4727-b125-4f703ce74573",
+        "name": "アキヨシ",
+        "url": "https://twitter.com/akiyoshi_lev",
+        "avatar_url": "https://fortee.jp/files/kinoko-2026/avatar/58bca5c5-2531-4727-b125-4f703ce74573.jpg"
+      },
+      {
+        "id": "1a03c909-1d7b-4bfe-92e9-f88279bc8d91",
+        "name": "いささん",
+        "url": "https://twitter.com/isasan36",
+        "avatar_url": "https://fortee.jp/files/kinoko-2026/avatar/1a03c909-1d7b-4bfe-92e9-f88279bc8d91.jpg"
       },
       {
         "id": "210ff939-7018-49df-9362-5c01c419d846",
