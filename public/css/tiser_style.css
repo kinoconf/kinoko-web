@@ -350,6 +350,19 @@ h1 {
     }
 }
 
+.ended-message {
+    margin-top: 32px;
+    padding: 16px 28px;
+    background: rgba(255, 255, 255, 0.85);
+    color: #333;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out 0.6s both;
+}
+
 /* ========================================
    メインコンテンツエリア
    ======================================== */
